@@ -1,6 +1,6 @@
 Image Denoising using Edge Patch Based Dictionaries and BIRCH unsupervised clustering algorithm<br/>
 
-Run main.m<br/>
+`Run main.m<br/>`
 
 
 A technique to speed-up a nonlocal means (NLM) filter is implemented. In the original NLM filter, most of its computational time is spent on finding distances for all the patches in the search window. Here, a dictionary is built in which patches with similar photometric structures are clustered together. Dictionary is built only once with high resolution images belonging to different scenes. Since the dictionary is well organized in terms of indexing its entries, it is used to search similar patches very quickly for efficient NLM denoising.A substantial reduction in computational cost compared with the original NLM method, especially when the search window of NLM is large, without much affecting the PSNR. Second, it can be seen that by building a dictionary for edge patches as opposed to intensity patches, it is possible to reduce the dictionary size; thus, further improving the computational speed and memory requirement. The implemented method preclassifies similar patches with the same distance measure as used by NLM method. The implemented algorithm is shown to outperform other prefiltering based fast NLM algorithms computationally as well as qualitatively.
